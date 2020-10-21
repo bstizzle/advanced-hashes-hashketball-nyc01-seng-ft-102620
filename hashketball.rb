@@ -133,6 +133,7 @@ def num_points_scored(player)
     game_hash[side].each do |category, info|
       if game_hash[side][category][info][:player_name] == player 
         return game_hash[side][category][info][:points]
+      end 
     end 
   end 
 end 
