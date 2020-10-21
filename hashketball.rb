@@ -128,5 +128,8 @@ end
 
 # Write code here
 
+def num_points_scored(player)
+  game_hash  
+end 
 
 
