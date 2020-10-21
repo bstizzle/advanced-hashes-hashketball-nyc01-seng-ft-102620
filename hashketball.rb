@@ -129,7 +129,15 @@ end
 # Write code here
 
 def num_points_scored(player)
-  game_hash  
+  game_hash.each do |side, details|
+    game_hash[side].each do |category, info|
+      game_hash[side][category].each do |type, stat|
+        if player == stat 
+          return game_hash[side][category][:points]
+        end 
+      end   
+    end 
+  end 
 end 
 
 
